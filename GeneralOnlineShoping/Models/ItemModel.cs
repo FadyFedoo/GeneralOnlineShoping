@@ -9,12 +9,12 @@ namespace GeneralOnlineShoping.Models
 {
     public class ItemModel
     {
-        private string Id { get; }
+        [Key]
+        public int Id { get; set; }
         [Required]
         public string Name { set; get; }
         [Required]
         public double Price { set; get; }
-        public Image ItemPhoto { set; get; }
         [DataType(DataType.MultilineText)]
         public string Description { set; get; }
     }

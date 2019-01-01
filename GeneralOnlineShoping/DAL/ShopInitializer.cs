@@ -14,17 +14,22 @@ namespace GeneralOnlineShoping.DAL
             
             var users = new List<UserAccount>
             {
-                new UserAccount{Name="Fady",Mail="fady.youssef94@yahoo.com",Password = "123"},
-                new UserAccount{Name="ahmed",Mail="fady.youssef94@yahoo.com",Password = "123"}
+                new UserAccount{Id=1,Name="Fady",Mail="fady.youssef94@yahoo.com",Password = "123"},
+                new UserAccount{Id=2,Name="ahmed",Mail="fady.youssef94@yahoo.com",Password = "123"}
             };
             users.ForEach(u => context.Users.Add(u));
             var items = new List<ItemModel>
             {
-                new ItemModel{Name="item1",Price= 32},
-                new ItemModel{Name="item2",Price = 36}
+                new ItemModel{Id=1,Name="item1",Price= 32},
+                new ItemModel{Id=2,Name="item2",Price = 36}
             };
             items.ForEach(u => context.Items.Add(u));
             context.SaveChanges();
         }
+        public void Df(ShopContext context)
+        {
+            Seed(context);
+        }
     }
+    
 }

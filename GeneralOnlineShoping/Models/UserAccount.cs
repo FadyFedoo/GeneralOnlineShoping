@@ -10,7 +10,8 @@ namespace GeneralOnlineShoping.Models
 {
     public class UserAccount
     {
-        private string Id { get; }
+        [Key]
+        public int Id { get; set; }
         public string Name { set; get; }
         [DataType(DataType.EmailAddress)]
         [Required]

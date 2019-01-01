@@ -12,6 +12,7 @@ namespace GeneralOnlineShoping.DAL
     {
         public ShopContext() : base("ShopContext")
         {
+
         }
         public DbSet<ItemModel> Items { set; get; }
         public DbSet<UserAccount> Users { set; get; }
