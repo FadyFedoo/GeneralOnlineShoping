@@ -17,5 +17,6 @@ namespace GeneralOnlineShoping.Models
         public double Price { set; get; }
         [DataType(DataType.MultilineText)]
         public string Description { set; get; }
+        public string Category { set; get; }
     }
 }

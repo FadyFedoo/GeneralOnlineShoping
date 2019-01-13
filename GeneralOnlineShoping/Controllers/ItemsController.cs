@@ -18,8 +18,6 @@ namespace GeneralOnlineShoping.Controllers
         // GET: Items
         public ActionResult Index()
         {
-            //ShopInitializer si = new ShopInitializer();
-            //si.Df(db);
             return View(db.Items.ToList());
         }
 
